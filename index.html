@@ -1,579 +1,132 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Komali Beeram</title>
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="Komali Beeram">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- unicons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="">
         <!-- main css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- default color -->
-        <link rel="stylesheet" type="text/css" href="css/skins/color-1.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Komali Beeram</title>
     </head>
-
     <body>
-        <!-- header start -->
-        <header class="header" >
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="logo">
-                        <a href="index.html">KB</a>
-                    </div>
-                    <div class="hamburger-btn outer-shadow hover-in-shadow">
-                        <span></span>
+        <!-- header -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Komali Beeram</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contactme
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btn">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
-        <!-- header-end -->
-        <!-- navigation-start -->
-        <nav class="nav-menu">
-            <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
-            <div class="nav-menu-inner">
-                <ul>
-                    <li><a href="#" class="inner-shadow active">home</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">portfolio</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">testimonial</a></li>
-                    <li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>
-                </ul>
-            </div>
-            <!-- copyright text -->
-            <p class="copyright-text">&copy; 2021 Komali Beeram</p>
-        </nav>
-        <!-- navigation-end -->
-        <!-- home section start -->
-        <section class="home-section section">
-            <!-- effect wrap start -->
-            <div class="effect-wrap">
-                <div class="effect effect-1"></div>
-                <div class="effect effect-2">
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div>
-                </div>
-                <div class="effect effect-3"></div>
-                <div class="effect effect-4"></div>
-                <div class="effect effect-5">
-                    <div></div><div></div><div></div><div></div><div></div>
-                    <div></div><div></div><div></div><div></div><div></div>
-                </div>
-            </div>
-            <!-- effect wrap end -->
-            <div class="container">
-                <div class="row full-screen align-items-center">
-                    <div class="home-text">
-                        <p>Hello</p>
-                        <h2>I'm Komali Beeram</h2>
-                        <h1>Web Developer</h1>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
-                    </div>
-                    <div class="home-img">
-                        <div class="img-box inner-shadow">
-                            <img src="img\profphotokomali.jpg" class="outer-shadow" alt="profile-pic" alt="profile-pic">
+        <!-- main -->
+        <main class="main">
+            <!-- home -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/komali-beeram-6027761b4" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://www.instagram.com/komalibeeram/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
+                            <a href="https://github.com/komalibeeram" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- home section end -->
-        <!-- about section start -->
-        <section class="about-section section">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-heading="main info">About me</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-img">
-                        <div class="img-box inner-shadow">
-                            <img src="img\profphotokomali.jpg" class="outer-shadow" alt="profile-pic">
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    
+                                    <image class="home__blob-img" x='22' y='18' xlink:href="img\profile11.png"/>
+                                </g>
+                            </svg>
                         </div>
-                        <!-- social links start -->
-                        <div class="social-links">
-                            <a href="#" class="outer-shadow hover-in-shadow"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="outer-shadow hover-in-shadow"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="outer-shadow hover-in-shadow"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" class="outer-shadow hover-in-shadow"><i class="fa fa-medium"></i></a>
-                            <a href="#" class="outer-shadow hover-in-shadow"><i class="fa fa-github"></i></a>
-                        </div>
-                        <!-- social links end -->
-                    </div>
-                    <div class="about-info">
-                        <p>
-                            <span>Hi! My name is Komali Beeram. I am a Web Developer.</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Porttitor eget dolor morbi non arcu 
-                                risus quis varius quam. Facilisis leo vel fringilla est ullamcorper eget nulla. Nisl vel pretium lectus quam 
-                                id leo in vitae. Nulla at volutpat diam ut venenatis tellus in metus. Rutrum tellus pellentesque eu tincidunt 
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Komali Beeram</h1>
+                            <h3 class="home__subtitle">Web Developer</h3>
+                            <p class="home__description">
+                                Experienced in web development, producing quality work.
                             </p>
-                            <p>
-                                tortor aliquam nulla facilisi. Neque vitae tempus quam pellentesque nec nam aliquam. Ultricies leo integer 
-                                malesuada nunc vel risus commodo viverra. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar 
-                                elementum. Ac turpis egestas sed tempus. Nullam eget felis eget nunc lobortis mattis aliquam. Arcu dictum 
-                                varius duis at consectetur. Malesuada fames ac turpis egestas sed tempus.
-                            </p>
-                        </p>
-                        <a href="Komali Beeram Resume.pdf" class="btn-1 outer-shadow hover-in-shadow">Download Resume</a>
-                        <a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire ME</a>
-                    </div>
-                </div>
-                <!-- about tabs start -->
-                <div class="row">
-                    <div class="about-tabs">
-                        <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
-                        <span class="tab-item" data-target=".experience">experience</span>
-                        <span class="tab-item" data-target=".education">education</span>
-                    </div>
-                </div>
-                <!-- about tabs end -->
-                <!-- skills start -->
-                <div class="row">
-                    <div class="skills tab-content active">
-                        <div class="row">
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>Html</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(50% - 14px);">
-                                        <span>50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>javascript</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(60% - 14px);">
-                                        <span>60%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>bootstrap</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(70% - 14px);">
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>jquery</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(80% - 14px);">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>angular</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(90% - 14px);">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
-                            <!-- skill item start -->
-                            <div class="skill-item">
-                                <p>php</p>
-                                <div class="progress inner-shadow">
-                                    <div class="progress-bar" style="width: calc(100% - 14px);">
-                                        <span>100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- skill item end -->
+                            <a href="#contact" class="button button--flex">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- skills end -->
-                <!-- experience  start-->
-                <div class="row">
-                    <div class="experience tab-content">
-                        <div class="row">
-                            <div class="timeline">
-                                <div class="row">
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-briefcase icon"></i>
-                                            <span>Sep,2020 - Present</span>
-                                            <h3>full stack developer</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-briefcase icon"></i>
-                                            <span>Sep,2019 - Oct, 2020</span>
-                                            <h3>web designer</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-briefcase icon"></i>
-                                            <span>Sep,2014 - Jun, 2016</span>
-                                            <h3>full stack developer</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
                 </div>
-                <!-- experience end -->
-                <!-- education start -->
-                <div class="row">
-                    <div class="education tab-content">
-                        <div class="row">
-                            <div class="timeline">
-                                <div class="row">
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-graduation-cap icon"></i>
-                                            <span>2018 - 2022</span>
-                                            <h3>ug in computer science</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-graduation-cap icon"></i>
-                                            <span>2016 - 2018</span>
-                                            <h3>intermediate in mpc</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                    <!-- timeline item start -->
-                                    <div class="timeline-item">
-                                        <div class="timeline-item-inner outer-shadow">
-                                            <i class="fa fa-graduation-cap icon"></i>
-                                            <span>2007 - 2016</span>
-                                            <h3>high school</h3>
-                                            <h4>Company name, india</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                                magna aliqua.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- timeline item end -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- education end -->
-            </div>
-        </section>
-        <!-- about section end -->
-        <!-- service section start -->
-        <section class="service-section section">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-heading="Services">What i do</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-mobile"></i>
-                            </div>
-                            <h3>Responsive design</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <h3>web design</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <h3>graphic design</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-code"></i>
-                            </div>
-                            <h3>clean code</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h3>seo marketing</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                    <!-- service item start -->
-                    <div class="service-item">
-                        <div class="service-item-inner outer-shadow">
-                            <div class="icon inner-shadow">
-                                <i class="fa fa-bullhorn"></i>
-                            </div>
-                            <h3>great support</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- service item end -->
-                </div>
-            </div>
-        </section>
-        <!-- service section end -->
-        <!-- portfolio section start -->
-        <section class="portfolio-section section">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title">
-                        <h2 data-heading="portfolio">Latest Works</h2>
-                    </div>
-                </div>
-                <!-- portfolio filter start -->
-                <div class="row">
-                    <div class="portfolio-filter">
-                        <span class="filter-item outer-shadow active" data-target="all">all</span>
-                        <span class="filter-item" data-target="web-application">web application</span>
-                        <span class="filter-item" data-target="photoshop">photoshop</span>
-                        <span class="filter-item" data-target="mobile-app">mobile app</span>
-                        <span class="filter-item" data-target="e-commerce">e commerce</span>
-                    </div>
-                </div>
-                <!-- portfolio filter end -->
-                <!-- portfolio items start -->
-                <div class="row portfolio-item">
-                    <!-- portfolio item start -->
-                    <div class="portfolio-item" data-category="web-application">
-                        <div class="portfolio-item-inner outer-shadow">
-                            <div class="portfolio-item-img">
-                                <img src="img\portfolio-website.png" alt="portfolio" data-screenshot="img/profphotokomali,img/profphotokomali,img/portfolio-website">
-                                <!-- view project button -->
-                                <span class="view-project">view project</span>
-                            </div>
-                            <p class="portfolio-item-title">personal portfolio</p>
-                            <!-- portfolio item details start -->
-                            <div class="portfolio-item-details">
-                                <div class="row">
-                                    <div class="description">
-                                        <h3>project brief:</h3>
-                                        <p>
-                                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Porttitor eget dolor morbi non arcu 
-                                risus quis varius quam. Facilisis leo vel fringilla est ullamcorper eget nulla. Nisl vel pretium lectus quam 
-                                id leo in vitae. Nulla at volutpat diam ut venenatis tellus in metus. Rutrum tellus pellentesque eu tincidunt 
-                                        </p>
-                                    </div>
-                                    <div class="info">
-                                        <h3>project info</h3>
-                                        <ul>
-                                            <li>date - <span>2020</span></li>
-                                            <li>client - <span>xyz</span></li>
-                                            <li>tools - <span>html, css, javascript</span></li>
-                                            <li>web - <span><a href="#">www.abc.com</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio item details end -->
-                        </div>
-                    </div>
-                    <!-- portfolio item end -->
-                    <!-- portfolio item start -->
-                    <div class="portfolio-item" data-category="e-commerce">
-                        <div class="portfolio-item-inner outer-shadow">
-                            <div class="portfolio-item-img">
-                                <img src="img\portfolio-website.png" alt="portfolio" data-screenshot="img/profphotokomali,img/profphotokomali,img/portfolio-website">
-                                <!-- view project button -->
-                                <span class="view-project">view project</span>
-                            </div>
-                            <p class="portfolio-item-title">personal portfolio</p>
-                            <!-- portfolio item details start -->
-                            <div class="portfolio-item-details">
-                                <div class="row">
-                                    <div class="description">
-                                        <h3>project brief:</h3>
-                                        <p>
-                                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Porttitor eget dolor morbi non arcu 
-                                risus quis varius quam. Facilisis leo vel fringilla est ullamcorper eget nulla. Nisl vel pretium lectus quam 
-                                id leo in vitae. Nulla at volutpat diam ut venenatis tellus in metus. Rutrum tellus pellentesque eu tincidunt 
-                                        </p>
-                                    </div>
-                                    <div class="info">
-                                        <h3>project info</h3>
-                                        <ul>
-                                            <li>date - <span>2020</span></li>
-                                            <li>client - <span>xyz</span></li>
-                                            <li>tools - <span>html, css, javascript</span></li>
-                                            <li>web - <span><a href="#">www.abc.com</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio item details end -->
-                        </div>
-                    </div>
-                    <!-- portfolio item end -->
-                    <!-- portfolio item start -->
-                    <div class="portfolio-item" data-category="web-application">
-                        <div class="portfolio-item-inner outer-shadow">
-                            <div class="portfolio-item-img">
-                                <img src="img\portfolio-website.png" alt="portfolio" data-screenshot="img/profphotokomali,img/profphotokomali,img/portfolio-website">
-                                <!-- view project button -->
-                                <span class="view-project">view project</span>
-                            </div>
-                            <p class="portfolio-item-title">personal portfolio</p>
-                            <!-- portfolio item details start -->
-                            <div class="portfolio-item-details">
-                                <div class="row">
-                                    <div class="description">
-                                        <h3>project brief:</h3>
-                                        <p>
-                                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Porttitor eget dolor morbi non arcu 
-                                risus quis varius quam. Facilisis leo vel fringilla est ullamcorper eget nulla. Nisl vel pretium lectus quam 
-                                id leo in vitae. Nulla at volutpat diam ut venenatis tellus in metus. Rutrum tellus pellentesque eu tincidunt 
-                                        </p>
-                                    </div>
-                                    <div class="info">
-                                        <h3>project info</h3>
-                                        <ul>
-                                            <li>date - <span>2020</span></li>
-                                            <li>client - <span>xyz</span></li>
-                                            <li>tools - <span>html, css, javascript</span></li>
-                                            <li>web - <span><a href="#">www.abc.com</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio item details end -->
-                        </div>
-                    </div>
-                    <!-- portfolio item end -->
-                    <!-- portfolio item start -->
-                    <div class="portfolio-item" data-category="e-commerce">
-                        <div class="portfolio-item-inner outer-shadow">
-                            <div class="portfolio-item-img">
-                                <img src="img\portfolio-website.png" alt="portfolio" data-screenshot="img/profphotokomali,img/profphotokomali,img/portfolio-website">
-                                <!-- view project button -->
-                                <span class="view-project">view project</span>
-                            </div>
-                            <p class="portfolio-item-title">personal portfolio</p>
-                            <!-- portfolio item details start -->
-                            <div class="portfolio-item-details">
-                                <div class="row">
-                                    <div class="description">
-                                        <h3>project brief:</h3>
-                                        <p>
-                                            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Porttitor eget dolor morbi non arcu 
-                                risus quis varius quam. Facilisis leo vel fringilla est ullamcorper eget nulla. Nisl vel pretium lectus quam 
-                                id leo in vitae. Nulla at volutpat diam ut venenatis tellus in metus. Rutrum tellus pellentesque eu tincidunt 
-                                        </p>
-                                    </div>
-                                    <div class="info">
-                                        <h3>project info</h3>
-                                        <ul>
-                                            <li>date - <span>2020</span></li>
-                                            <li>client - <span>xyz</span></li>
-                                            <li>tools - <span>html, css, javascript</span></li>
-                                            <li>web - <span><a href="#">www.abc.com</a></span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio item details end -->
-                        </div>
-                    </div>
-                    <!-- portfolio item end -->
-                </div>
-                <!-- portfolio items end -->
-            </div>
-        </section>
-        <!-- portfolio section end -->
+            </section>
+        </main>
+
+        <!-- footer -->
+
+        <!-- scroll top -->
+
+        <!-- swiper js -->
+        <script src=""></script>
 
         <!-- main js -->
-        <script src="js\main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
