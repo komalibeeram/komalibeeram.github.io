@@ -26,3 +26,24 @@ function linkAction(){
     navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click',linkAction))
+//  accordion skills
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header');
+
+function toggleSkills(){
+    let itemClass = this.parentNode.ClassName;
+
+    for(i=0; i<skillsContent.length; i++){
+        // console.log(i);
+        skillsContent[i].className = 'skills__content skills__close';
+    }
+    if(itemClass == 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open';
+    }
+    
+}
+skillsHeader.forEach((el) =>{
+    console.log(el);
+    el.addEventListener('click', toggleSkills);
+    // console.log("hi");
+});
