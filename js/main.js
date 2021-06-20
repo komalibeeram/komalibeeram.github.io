@@ -31,9 +31,9 @@ const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills(){
-    let itemClass = this.parentNode.ClassName;
+    let itemClass = this.parentNode.className;
 
-    for(i=0; i<skillsContent.length; i++){
+    for(i = 0; i < skillsContent.length; i++){
         // console.log(i);
         skillsContent[i].className = 'skills__content skills__close';
     }
@@ -42,6 +42,7 @@ function toggleSkills(){
     }
     
 }
+
 skillsHeader.forEach((el) =>{
     console.log(el);
     el.addEventListener('click', toggleSkills);
